@@ -1,0 +1,100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module sord.base.func</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="sord.html"><font color="#ffffff">sord</font></a>.<a href="sord.base.html"><font color="#ffffff">base</font></a>.func</strong></big></big> (version 2.0-pysqlite, 18 August 2010)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jtsage/sord/sord/base/func.py">/home/jtsage/sord/sord/base/func.py</a></font></td></tr></table>
+    <p><tt>Saga&nbsp;of&nbsp;the&nbsp;Red&nbsp;Dragon<br>
+&nbsp;<br>
+*&nbsp;A&nbsp;blatent&nbsp;rip&nbsp;off&nbsp;of&nbsp;Seth&nbsp;Able&nbsp;Robinson's&nbsp;BBS&nbsp;Door&nbsp;Masterpiece.&nbsp;&nbsp;<br>
+*&nbsp;All&nbsp;attempts&nbsp;were&nbsp;made&nbsp;to&nbsp;be&nbsp;as&nbsp;close&nbsp;to&nbsp;the&nbsp;original&nbsp;as&nbsp;possible,&nbsp;<br>
+*&nbsp;including&nbsp;some&nbsp;original&nbsp;artwork,&nbsp;the&nbsp;original&nbsp;fight&nbsp;equations,&nbsp;and&nbsp;<br>
+*&nbsp;most&nbsp;especially&nbsp;the&nbsp;original&nbsp;spelling&nbsp;and&nbsp;punctuation&nbsp;mistakes.&nbsp;&nbsp;Enjoy.<br>
+&nbsp;<br>
+*&nbsp;Contains&nbsp;all&nbsp;misc&nbsp;display&nbsp;functions.<br>
+&nbsp;<br>
+*&nbsp;(c)&nbsp;2009&nbsp;-&nbsp;2011&nbsp;J.T.Sage<br>
+*&nbsp;No&nbsp;Rights&nbsp;Reserved&nbsp;-&nbsp;but&nbsp;don't&nbsp;sell&nbsp;it&nbsp;please.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-casebold"><strong>casebold</strong></a>(text, boldcolor)</dt><dd><tt>Color&nbsp;by&nbsp;character&nbsp;case.&nbsp;-&nbsp;Capitals&nbsp;returns&nbsp;in&nbsp;bold&nbsp;of&nbsp;suplied&nbsp;color,&nbsp;lowercase&nbsp;in&nbsp;suplied&nbsp;color.<br>
+&nbsp;<br>
+@param&nbsp;string&nbsp;$text&nbsp;Input&nbsp;text&nbsp;to&nbsp;color<br>
+@param&nbsp;int&nbsp;$boldcolor&nbsp;Color&nbsp;for&nbsp;lowercase&nbsp;letters</tt></dd></dl>
+ <dl><dt><a name="-caseclr"><strong>caseclr</strong></a>(text, boldcolor, normcolor)</dt><dd><tt>Color&nbsp;by&nbsp;character&nbsp;case.&nbsp;-&nbsp;Capitals&nbsp;returns&nbsp;in&nbsp;boldcolor,&nbsp;lowercase&nbsp;in&nbsp;normcolor<br>
+&nbsp;<br>
+@param&nbsp;string&nbsp;$text&nbsp;Input&nbsp;text&nbsp;to&nbsp;color<br>
+@param&nbsp;int&nbsp;$boldcolor&nbsp;Color&nbsp;for&nbsp;capital&nbsp;letters<br>
+@param&nbsp;int&nbsp;$normcolor&nbsp;Color&nbsp;for&nbsp;lowercase&nbsp;letters</tt></dd></dl>
+ <dl><dt><a name="-colorcode"><strong>colorcode</strong></a>(text)</dt><dd><tt>Process&nbsp;user&nbsp;entered&nbsp;color&nbsp;codes.&nbsp;-&nbsp;Uses&nbsp;color&nbsp;codes&nbsp;contained&nbsp;in&nbsp;curly&nbsp;braces.&nbsp;&nbsp;Standard&nbsp;ANSI&nbsp;codes&nbsp;work.<br>
+&nbsp;<br>
+@todo&nbsp;Add&nbsp;error&nbsp;correction&nbsp;and&nbsp;checking.&nbsp;&nbsp;Could&nbsp;be&nbsp;used&nbsp;to&nbsp;hose&nbsp;other&nbsp;players.<br>
+@param&nbsp;string&nbsp;$text&nbsp;Text&nbsp;to&nbsp;convert&nbsp;to&nbsp;escape&nbsp;string</tt></dd></dl>
+ <dl><dt><a name="-getLine"><strong>getLine</strong></a>(connection, echo, prompt<font color="#909090">=''</font>)</dt><dd><tt>Get&nbsp;line&nbsp;from&nbsp;user</tt></dd></dl>
+ <dl><dt><a name="-getclientconfig"><strong>getclientconfig</strong></a>(connection, log)</dt><dd><tt>Retrieve&nbsp;client&nbsp;generated&nbsp;line&nbsp;speed&nbsp;/&nbsp;noise&nbsp;configuration&nbsp;for&nbsp;emulation</tt></dd></dl>
+ <dl><dt><a name="-maketime"><strong>maketime</strong></a>(user)</dt><dd><tt>Make&nbsp;a&nbsp;time&nbsp;since&nbsp;login&nbsp;string</tt></dd></dl>
+ <dl><dt><a name="-menu_2col"><strong>menu_2col</strong></a>(text1, text2, col1, col2)</dt><dd><tt>2&nbsp;Column&nbsp;Menu&nbsp;-&nbsp;&nbsp;Generate&nbsp;a&nbsp;2&nbsp;column&nbsp;menu&nbsp;entry<br>
+&nbsp;<br>
+@param&nbsp;string&nbsp;$text1&nbsp;Menu&nbsp;Option&nbsp;1<br>
+@param&nbsp;string&nbsp;$text2&nbsp;Menu&nbsp;Option&nbsp;2<br>
+@param&nbsp;int&nbsp;$col1&nbsp;Option&nbsp;color&nbsp;for&nbsp;menu&nbsp;option&nbsp;1<br>
+@param&nbsp;int&nbsp;$col2&nbsp;Option&nbsp;color&nbsp;for&nbsp;menu&nbsp;option&nbsp;2</tt></dd></dl>
+ <dl><dt><a name="-normmenu"><strong>normmenu</strong></a>(text)</dt><dd><tt>Return&nbsp;a&nbsp;standard&nbsp;colored&nbsp;menu&nbsp;entry.<br>
+&nbsp;<br>
+@param&nbsp;string&nbsp;$text&nbsp;Text&nbsp;to&nbsp;convert&nbsp;to&nbsp;menu&nbsp;entry</tt></dd></dl>
+ <dl><dt><a name="-padnumcol"><strong>padnumcol</strong></a>(text, col)</dt><dd><tt>Pad&nbsp;a&nbsp;selection&nbsp;of&nbsp;text&nbsp;to&nbsp;be&nbsp;a&nbsp;specied&nbsp;number&nbsp;of&nbsp;columns&nbsp;wide.<br>
+&nbsp;<br>
+@param&nbsp;string&nbsp;$text&nbsp;Text&nbsp;to&nbsp;pad<br>
+@param&nbsp;int&nbsp;$col&nbsp;Number&nbsp;of&nbsp;columns&nbsp;to&nbsp;fill</tt></dd></dl>
+ <dl><dt><a name="-padright"><strong>padright</strong></a>(text, col)</dt><dd><tt>Pad&nbsp;a&nbsp;selection&nbsp;of&nbsp;text&nbsp;to&nbsp;be&nbsp;a&nbsp;specied&nbsp;number&nbsp;of&nbsp;columns&nbsp;wide,&nbsp;right&nbsp;justified.<br>
+&nbsp;<br>
+@param&nbsp;string&nbsp;$text&nbsp;Text&nbsp;to&nbsp;pad<br>
+@param&nbsp;int&nbsp;$col&nbsp;Number&nbsp;of&nbsp;columns&nbsp;to&nbsp;fill</tt></dd></dl>
+ <dl><dt><a name="-pauser"><strong>pauser</strong></a>(connection)</dt><dd><tt>Sreen&nbsp;pauser</tt></dd></dl>
+ <dl><dt><a name="-slowecho"><strong>slowecho</strong></a>(connection, data, LINESPEED<font color="#909090">=0</font>, NOISE<font color="#909090">=0</font>)</dt><dd><tt>Modem&nbsp;speed&nbsp;emulation&nbsp;display&nbsp;routine</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__author__</strong> = 'Jonathan T. Sage &lt;jtsage@gmail.com&gt;'<br>
+<strong>__credits__</strong> = 'Seth Able Robinson, original game concept'<br>
+<strong>__date__</strong> = '18 August 2010'<br>
+<strong>__version__</strong> = '2.0-pysqlite'</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Jonathan&nbsp;T.&nbsp;Sage&nbsp;&lt;jtsage@gmail.com&gt;</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Credits</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Seth&nbsp;Able&nbsp;Robinson,&nbsp;original&nbsp;game&nbsp;concept</td></tr></table>
+</body></html>

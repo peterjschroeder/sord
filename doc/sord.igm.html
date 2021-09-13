@@ -1,0 +1,78 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package sord.igm</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="sord.html"><font color="#ffffff">sord</font></a>.igm</strong></big></big> (version 2.0-pysqlite, 18 August 2010)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jtsage/sord/sord/igm/__init__.py">/home/jtsage/sord/sord/igm/__init__.py</a></font></td></tr></table>
+    <p><tt>Saga&nbsp;of&nbsp;the&nbsp;Red&nbsp;Dragon<br>
+&nbsp;<br>
+*&nbsp;A&nbsp;blatent&nbsp;rip&nbsp;off&nbsp;of&nbsp;Seth&nbsp;Able&nbsp;Robinson's&nbsp;BBS&nbsp;Door&nbsp;Masterpiece.&nbsp;&nbsp;<br>
+*&nbsp;All&nbsp;attempts&nbsp;were&nbsp;made&nbsp;to&nbsp;be&nbsp;as&nbsp;close&nbsp;to&nbsp;the&nbsp;original&nbsp;as&nbsp;possible,&nbsp;<br>
+*&nbsp;including&nbsp;some&nbsp;original&nbsp;artwork,&nbsp;the&nbsp;original&nbsp;fight&nbsp;equations,&nbsp;and&nbsp;<br>
+*&nbsp;most&nbsp;especially&nbsp;the&nbsp;original&nbsp;spelling&nbsp;and&nbsp;punctuation&nbsp;mistakes.&nbsp;&nbsp;Enjoy.<br>
+&nbsp;<br>
+*&nbsp;This&nbsp;sub-package&nbsp;contains&nbsp;all&nbsp;site-specific&nbsp;in-game-modules.<br>
+&nbsp;<br>
+*&nbsp;(c)&nbsp;2009&nbsp;-&nbsp;2011&nbsp;J.T.Sage<br>
+*&nbsp;No&nbsp;Rights&nbsp;Reserved&nbsp;-&nbsp;but&nbsp;don't&nbsp;sell&nbsp;it&nbsp;please.<br>
+&nbsp;<br>
+***&nbsp;Notes&nbsp;on&nbsp;IGM's:<br>
+&nbsp;<br>
+*&nbsp;All&nbsp;IGM&nbsp;module&nbsp;files&nbsp;should&nbsp;be&nbsp;listed&nbsp;in&nbsp;the&nbsp;above&nbsp;import.<br>
+*&nbsp;To&nbsp;install&nbsp;a&nbsp;new&nbsp;IGM,&nbsp;add&nbsp;another&nbsp;tuple&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;tuples&nbsp;in&nbsp;igmlist<br>
+&nbsp;<br>
+*&nbsp;&nbsp;ex:&nbsp;&nbsp;igmlist&nbsp;=&nbsp;list(&nbsp;(&nbsp;'KEY&nbsp;COMMAND',&nbsp;igm_module.igm_main_class()&nbsp;,&nbsp;'DISPLAY&nbsp;NAME'&nbsp;)&nbsp;)<br>
+&nbsp;<br>
+*&nbsp;IGM&nbsp;Module&nbsp;files&nbsp;*may*&nbsp;include&nbsp;more&nbsp;than&nbsp;one&nbsp;IGM&nbsp;class,&nbsp;list&nbsp;them&nbsp;seperatly.<br>
+*&nbsp;IGM&nbsp;Module&nbsp;classes&nbsp;*must*&nbsp;have&nbsp;a&nbsp;run(&lt;sordUser&nbsp;object&gt;)&nbsp;method,&nbsp;used&nbsp;to&nbsp;initiate&nbsp;the&nbsp;IGM<br>
+*&nbsp;IGM&nbsp;Module&nbsp;classes&nbsp;*may*&nbsp;have&nbsp;an&nbsp;__init__()&nbsp;method<br>
+*&nbsp;&nbsp;&nbsp;!!&nbsp;but&nbsp;it&nbsp;is&nbsp;called&nbsp;too&nbsp;early&nbsp;in&nbsp;processing&nbsp;to&nbsp;do&nbsp;anything&nbsp;other&nbsp;that&nbsp;basic&nbsp;setup&nbsp;!!<br>
+&nbsp;<br>
+*&nbsp;NOTE:&nbsp;See&nbsp;dht.py&nbsp;for&nbsp;an&nbsp;example&nbsp;of&nbsp;a&nbsp;working&nbsp;IGM&nbsp;(has&nbsp;access&nbsp;to&nbsp;basic&nbsp;display&nbsp;functions,&nbsp;<br>
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;basic&nbsp;user&nbsp;info&nbsp;display&nbsp;functions,&nbsp;and&nbsp;the&nbsp;full&nbsp;user&nbsp;object.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+*&nbsp;WARNING:&nbsp;The&nbsp;IGMs&nbsp;are&nbsp;loaded&nbsp;with&nbsp;the&nbsp;server,&nbsp;and&nbsp;do&nbsp;nothing&nbsp;(unavoidable&nbsp;in&nbsp;order&nbsp;to&nbsp;enumerate&nbsp;them)<br>
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However,&nbsp;they&nbsp;are&nbsp;also&nbsp;loaded&nbsp;for&nbsp;each&nbsp;connected&nbsp;user&nbsp;again.&nbsp;&nbsp;As&nbsp;you&nbsp;might&nbsp;imagine,&nbsp;if&nbsp;an<br>
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IGM&nbsp;uses&nbsp;a&nbsp;lot&nbsp;of&nbsp;memory,&nbsp;or&nbsp;you&nbsp;have&nbsp;a&nbsp;ton&nbsp;of&nbsp;IGMS,&nbsp;this&nbsp;can&nbsp;be&nbsp;a&nbsp;performance&nbsp;hit.&nbsp;&nbsp;Natrually,<br>
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;modern&nbsp;systems,&nbsp;this&nbsp;isn't&nbsp;quite&nbsp;the&nbsp;problem&nbsp;it&nbsp;was&nbsp;in&nbsp;the&nbsp;days&nbsp;of&nbsp;LORD&nbsp;and&nbsp;a&nbsp;BBS&nbsp;running&nbsp;<br>
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;a&nbsp;386,&nbsp;but&nbsp;it&nbsp;is&nbsp;certainly&nbsp;something&nbsp;to&nbsp;be&nbsp;aware&nbsp;of.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="sord.igm.dht.html">dht</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__author__</strong> = 'Jonathan T. Sage &lt;jtsage@gmail.com&gt;'<br>
+<strong>__credits__</strong> = 'Seth Able Robinson, original game concept'<br>
+<strong>__date__</strong> = '18 August 2010'<br>
+<strong>__version__</strong> = '2.0-pysqlite'<br>
+<strong>igmlist</strong> = [('D', &lt;sord.igm.dht.dht instance&gt;, 'Dark Horse Tavern')]</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Jonathan&nbsp;T.&nbsp;Sage&nbsp;&lt;jtsage@gmail.com&gt;</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Credits</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Seth&nbsp;Able&nbsp;Robinson,&nbsp;original&nbsp;game&nbsp;concept</td></tr></table>
+</body></html>

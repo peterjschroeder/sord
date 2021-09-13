@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module sord.base.dbase</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="sord.html"><font color="#ffffff">sord</font></a>.<a href="sord.base.html"><font color="#ffffff">base</font></a>.dbase</strong></big></big> (version 2.0-pysqlite, 18 August 2010)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jtsage/sord/sord/base/dbase.py">/home/jtsage/sord/sord/base/dbase.py</a></font></td></tr></table>
+    <p><tt>Saga&nbsp;of&nbsp;the&nbsp;Red&nbsp;Dragon<br>
+&nbsp;<br>
+*&nbsp;A&nbsp;blatent&nbsp;rip&nbsp;off&nbsp;of&nbsp;Seth&nbsp;Able&nbsp;Robinson's&nbsp;BBS&nbsp;Door&nbsp;Masterpiece.&nbsp;&nbsp;<br>
+*&nbsp;All&nbsp;attempts&nbsp;were&nbsp;made&nbsp;to&nbsp;be&nbsp;as&nbsp;close&nbsp;to&nbsp;the&nbsp;original&nbsp;as&nbsp;possible,&nbsp;<br>
+*&nbsp;including&nbsp;some&nbsp;original&nbsp;artwork,&nbsp;the&nbsp;original&nbsp;fight&nbsp;equations,&nbsp;and&nbsp;<br>
+*&nbsp;most&nbsp;especially&nbsp;the&nbsp;original&nbsp;spelling&nbsp;and&nbsp;punctuation&nbsp;mistakes.&nbsp;&nbsp;Enjoy.<br>
+&nbsp;<br>
+*&nbsp;Contains&nbsp;all&nbsp;database&nbsp;functions.<br>
+&nbsp;<br>
+*&nbsp;(c)&nbsp;2009&nbsp;-&nbsp;2011&nbsp;J.T.Sage<br>
+*&nbsp;No&nbsp;Rights&nbsp;Reserved&nbsp;-&nbsp;but&nbsp;don't&nbsp;sell&nbsp;it&nbsp;please.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-createDB"><strong>createDB</strong></a>(config, log)</dt><dd><tt>Create&nbsp;new&nbsp;S.O.R.D.&nbsp;database</tt></dd></dl>
+ <dl><dt><a name="-dayRollover"><strong>dayRollover</strong></a>(config, sqc, log)</dt><dd><tt>Daily&nbsp;Update&nbsp;routine</tt></dd></dl>
+ <dl><dt><a name="-getDB"><strong>getDB</strong></a>(config)</dt><dd><tt>Get&nbsp;an&nbsp;active&nbsp;database&nbsp;connection</tt></dd></dl>
+ <dl><dt><a name="-initialTest"><strong>initialTest</strong></a>(config, log)</dt><dd><tt>Check&nbsp;for&nbsp;db&nbsp;existence&nbsp;and&nbsp;check&nbsp;version</tt></dd></dl>
+ <dl><dt><a name="-unlink"><strong>unlink</strong></a>(...)</dt><dd><tt><a href="#-unlink">unlink</a>(path)<br>
+&nbsp;<br>
+Remove&nbsp;a&nbsp;file&nbsp;(same&nbsp;as&nbsp;remove(path)).</tt></dd></dl>
+ <dl><dt><a name="-updateDB"><strong>updateDB</strong></a>(config, log)</dt><dd><tt>Update&nbsp;S.O.R.D.&nbsp;datebase&nbsp;-&nbsp;for&nbsp;now,&nbsp;nuke&nbsp;and&nbsp;start&nbsp;over</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__author__</strong> = 'Jonathan T. Sage &lt;jtsage@gmail.com&gt;'<br>
+<strong>__credits__</strong> = 'Seth Able Robinson, original game concept'<br>
+<strong>__date__</strong> = '18 August 2010'<br>
+<strong>__version__</strong> = '2.0-pysqlite'</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Jonathan&nbsp;T.&nbsp;Sage&nbsp;&lt;jtsage@gmail.com&gt;</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Credits</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Seth&nbsp;Able&nbsp;Robinson,&nbsp;original&nbsp;game&nbsp;concept</td></tr></table>
+</body></html>
